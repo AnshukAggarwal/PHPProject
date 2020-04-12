@@ -1,0 +1,174 @@
+#navigation {
+    padding-top: 1%;
+}
+
+#logo{
+    left: 10px;
+    top: 5px;
+    float: left;
+    padding-left: 2%;
+}
+#logo img{
+    width: 150px;
+}
+
+#nav_links{
+    margin-left: 5%;
+    padding-top: 22px;
+    display:inline-block;
+    width: 40%;
+}
+#menu{
+    display:flex;
+}
+
+#nav_icons{
+    display: inline-block;
+    width: 25%;
+}
+
+#login_register{
+    padding-top: 22px;
+    float: right;
+    width: 12%;
+    font-weight: lighter;
+}
+#login_register a{
+    margin-left: 15px;
+}
+
+#navigation li{
+    display: inline-block;
+    margin-right: 4%;
+    font-weight: lighter;
+}
+
+#nav_icons li{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#nav_links li{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.link {
+    padding-bottom: 15px;
+}
+
+.underline {
+    border-bottom: black 2px solid;
+}
+
+main {
+    clear: both;
+}
+
+#section1 {
+    margin: 0 auto;
+    width: 60%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#section1 input[type=text]{
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: none;
+    padding-left: 27px !important;
+    padding-top: 2px !important;
+    height: 54px !important;
+    width: 60% !important;
+    min-height: 44px !important;
+}
+
+#section1 input[type=submit] {
+    width: 20%;
+    height: 54px;
+
+}
+
+.btn {
+    vertical-align: unset;
+    border-radius: 4px;
+    background: #195ff7;
+    border: 2px solid #195ff7;
+    margin-left: 2%;
+}
+#section2 {
+    background-color: #F5F5F5;
+}
+#section1 h2{
+    color: #6f6f6f ;
+    font-size: large;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#popularCompanies {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+#popularCompanies h1 {
+    margin-bottom: 20px;
+}
+
+footer {
+    border-top: 1px solid #f2f2f2;
+    padding: 16px 2%;
+    background: #fff;
+}
+
+
+footer li{
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 1%;
+}
+
+#footer_links {
+    float: left;
+    width: 80%;
+}
+
+#footer_copyright {
+    float: left;
+    width: 20%;
+}
+
+#menu{
+    display: flex;
+}
+.checked{
+    color: orange;
+}
+.displayreview{
+    background-color: aliceblue;
+    margin-bottom: 5px;
+    
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.displayreview p{
+    margin-bottom: 0;
+}
+
+.shift{
+    margin-left: 10%;
+}
+#btnwritereview{
+    float: right;
+    margin-right: 20%;
+}
+#wages{
+    float: right;
+    
+}
+.card-body{
+    padding-bottom: 0;
+}

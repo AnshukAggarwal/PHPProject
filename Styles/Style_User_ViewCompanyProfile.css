@@ -1,0 +1,24 @@
+
+/*Anshuk*/
+.company_info_main{
+    max-width: 980px;
+    margin: 0 auto;
+}
+#company_section{
+    display: flex;
+    justify-content: space-between;
+}
+#about_company{
+    flex-basis: 40%;
+}
+#company_info{
+    display: flex;
+    justify-content: space-between;
+}
+#company_info{
+    flex-basis: 40%;
+}
+.similarcomps{
+    padding: 10px;
+}
+/*Anshuk end*/

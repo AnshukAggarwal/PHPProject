@@ -1,0 +1,18 @@
+#jobsList{
+    margin: 0 auto;
+    padding: 2%;
+    width: 95%;
+}
+
+#viewJob {
+    margin: 0 auto;
+    padding: 5%;
+    width: 95%;
+    border: 1px solid rgba(0,0,0,.125);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#formDelete {
+    display: inline-block;
+}
