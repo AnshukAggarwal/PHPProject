@@ -4,7 +4,7 @@ require_once '../../Models/Company.php';
 $id=$_GET['id'];
 $db= Database::getDb();
 $c= new Company();
-$selectedProfile=$c->showProfile($db,$id);
+$selectedProfile=$c->showProfileByid($db,$id);
 ?>
 <!DOCTYPE html>
 <html lang="en">

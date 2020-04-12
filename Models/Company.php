@@ -36,6 +36,14 @@ class Company{
         $results=$pdostm->fetch(PDO::FETCH_OBJ);
         return $results;
     }
+    public function showProfileByid($db,$id){
+        $query= "SELECT * FROM Company WHERE id=:id";
+        $pdostm=$db->prepare($query);
+        $pdostm->bindParam(':id',$id);
+        $pdostm->execute();
+        $results=$pdostm->fetch(PDO::FETCH_OBJ);
+        return $results;
+    }
 
     public function updateProfile($name,$description,$head_office,$lob,$website,$employees,$id,$db,$status){
         $query= "UPDATE Company set name=:name, description=:description, head_office= :head_office,

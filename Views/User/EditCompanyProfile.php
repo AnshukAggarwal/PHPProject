@@ -12,6 +12,7 @@ if(isset($_POST['edit'])){
     $db= Database::getDb();
     $c= new Company();
     $user_id=$_SESSION['user_id'];
+    $id=$_POST['id'];
     $currentProfile= $c->showProfile($db,$user_id);
     $name=$currentProfile->name;
     $description=$currentProfile->description;
@@ -51,7 +52,7 @@ if(isset($_POST['updatepro'])){
 <h1>Details for <?= $name;?></h1>
 <div>
     <form method="post" action="EditCompanyProfile.php">
-        <input type="hidden" name="pid" value="<?= $user_id?>"/>
+        <input type="hidden" name="pid" value="<?= $id?>"/>
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" class="form-control" name="name" id="name" value="<?=$name; ?>">

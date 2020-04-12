@@ -49,7 +49,7 @@ if(isset($_SESSION['user_id']) && $user_role=="user") {
             </form>
             <form method="post" action="DeleteWebsiteReview.php">
                 <input type="hidden" name="id" value="<?= $review->id;?>">
-                <input type="submit" class="btn btn-primary" name="delete" value="Delete"/>
+                <input type="submit" class="btn btn-danger" name="delete" value="Delete"/>
             </form>
         </div>
     </div>
