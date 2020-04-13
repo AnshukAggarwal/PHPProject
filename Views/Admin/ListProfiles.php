@@ -21,7 +21,7 @@ require_once '../../Models/Company.php';
     </head>
     <body>
         <h1>List of Company Profiles</h1>
-        <a href="CompanyProfile.php" class="btn btn-primary mb-2">Add Profile</a>
+        <a href="AddCompanyProfile.php" class="btn btn-primary mb-2">Add Profile</a>
         <div>
             <form method="post" action="ListProfiles.php">
                 <input type="text" name="searchkey">

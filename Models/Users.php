@@ -14,7 +14,7 @@ class Users
     }
     //function to get a user by id
     public function findUser($db,$userid){
-        $query= "SELECT username from users where user_id=:userid";
+        $query= "SELECT * from users where user_id=:userid";
         $pdostm=$db->prepare($query);
         $pdostm->bindParam(':userid',$userid);
         $pdostm->execute();

@@ -49,8 +49,9 @@ if(isset($_POST['updatepro'])){
     <script src="../../Scripts/Script_Index_Search.js"></script>
 </head>
 <body>
-<h1>Details for <?= $name;?></h1>
-<div>
+
+<div class="container bootstrap snippet">
+    <h1>Details for <?= $name;?></h1>
     <form method="post" action="EditCompanyProfile.php">
         <input type="hidden" name="pid" value="<?= $id?>"/>
         <div class="form-group">
@@ -94,7 +95,7 @@ if(isset($_POST['updatepro'])){
             </select>
         </div>
         <div class="form-group">
-            <input type="submit" name="updatepro" value="Update">
+            <input type="submit" class="btn btn-primary" name="updatepro" value="Update">
         </div>
     </form>
 </div>

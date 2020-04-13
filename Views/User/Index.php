@@ -114,10 +114,6 @@ $reviews=$review->List5Reviews($db);
                 </div>
             <?php } ?>
         </section>
-        <div>
-            <button id="more">More</button>
-            <!-- use ajax to load more reviews-->
-        </div>
     </section>
     <!-- Anshuk End-->
 </main>

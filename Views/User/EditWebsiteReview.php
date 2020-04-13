@@ -5,7 +5,7 @@ if(!isset($_SESSION['user_id']))
     header('location:login.php');
 }
 $user_role=$_SESSION['user_role'];
-if(isset($_SESSION['user_id']) && $user_role=="user") {
+if(isset($_SESSION['user_id'])) {
     require_once '../../Database/Database.php';
     require_once '../../Models/WebsiteReview.php';
     if (isset($_POST['edit'])) {
@@ -48,7 +48,7 @@ if(isset($_POST['update_review'])){
 
 <body>
 <?php include '../../Includes/AfterLoginHeader.php';?>
-<main id="main_content">
+<main id="container bootstrap snippet">
     <a href="ViewWebsiteReview.php">Back to List</a>
     <form method="post" action="EditWebsiteReview.php">
         <input type="hidden" name="rid" value="<?= $id?>"/>

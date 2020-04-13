@@ -5,7 +5,7 @@ if(!isset($_SESSION['user_id']))
     header('location:login.php');
 }
 $user_role=$_SESSION['user_role'];
-if(isset($_SESSION['user_id']) && $user_role=="user") {
+if(isset($_SESSION['user_id'])) {
     require_once '../../Database/Database.php';
     require_once '../../Models/WebsiteReview.php';
     if (isset($_POST['write_review'])) {
@@ -45,16 +45,16 @@ if(isset($_SESSION['user_id']) && $user_role=="user") {
 
 <body>
 <?php include '../../Includes/AfterLoginHeader.php';?>
-<main id="main_content">
+<main class="container bootstrap snippet">
     <h1>Write a review for The Job Portal</h1>
     <form method="post" action="WriteWebsiteReview.php">
         <div class="form-group">
             <label for="user_review">Comments:</label>
-            <textarea rows="1" cols="80" id="user_review" class="form-control" name="user_review"></textarea>
+            <textarea rows="1" cols="60" id="user_review" class="form-control" name="user_review"></textarea>
             <div><?php if(isset($error)){echo $error;}?></div>
         </div>
         <div class="form-group">
-            <input type="submit" class="btn btn-primary" name="write_review" value="Submit"/>
+            <input type="submit" class="btn btn-primary" class="form-control" name="write_review" value="Submit"/>
         </div>
     </form>
 </main>

@@ -28,6 +28,7 @@ $similarCompanies=$c->findSimilarCompanies($db,$lob,$id);
 <body>
 <?php include '../../Includes/header.php';?>
 <main class="company_info_main">
+    <a href="Index.php" class="btn btn-primary">Home Page</a>
     <h1><?=$selectedCompany->name;?></h1>
     <div id="company_section">
         <div id="about_company">
@@ -52,19 +53,20 @@ $similarCompanies=$c->findSimilarCompanies($db,$lob,$id);
     <div>
         <form method="post" action="EditCompanyProfile.php">
             <input type="hidden" name="id" value="<?=$id;?>">
-            <input type="submit" name="edit" value="Edit">
+            <input type="submit" class="btn btn-primary" name="edit" value="Edit">
         </form>
     </div>
 </main>
 <section class="company_info_main">
+    <h2>Similar Companies</h2>
     <?php foreach ($similarCompanies as $similarCompany){ ?>
-    <div clas="similarcomps">
+    <div class="similarcomps">
 <!--        <form method="post" action="ViewSimilarCompany.php">-->
 <!--            <input type="hidden" name="lob" value="--><?//= $lob; ?><!--">-->
 <!--            <input type="hidden" name="id" value="--><?//= $id; ?><!--">-->
             <?=$similarCompany->name; ?>
-<!--            <input type="submit" name="view" value="View"/>-->
-<!--        </form>-->
+<!--            <input type="submit" class="btn btn-primary" name="view" value="View"/>-->
+        </form>
     </div>
     <?php } ?>
 </section>

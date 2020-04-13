@@ -27,11 +27,9 @@ if(isset($_POST['create'])){
 <body>
 
 <div class="flex">
-    <section id="aside">
-    </section>
     <section id="form">
         <h2>Create Company Profile</h2>
-        <form method="post" action="CompanyProfile.php" class="login-form">
+        <form method="post" action="AddCompanyProfile.php" class="login-form">
             <div class="form-group">
                 <label for="cname">Company Name</label>
                 <input type="text" name="cname" class="form-control"/>

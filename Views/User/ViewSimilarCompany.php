@@ -7,7 +7,7 @@ if(isset($_POST['view'])) {
     $db = Database::getDb();
     $c = new Company();
     $selectedCompany = $c->findSimilarCompanies($db,$lob,$id);
-    $newid=$selectedCompany[0]->id;
+    $newid=$selectedCompany->id;
     $similarCompanies=$c->findSimilarCompanies($db,$lob,$newid);
 }
 ?>
@@ -25,24 +25,24 @@ if(isset($_POST['view'])) {
 <body>
 <?php include '../../Includes/header.php';?>
 <main class="company_info_main">
-    <h1><?=$selectedCompany[0]->name;?></h1>
+    <h1><?=$selectedCompany->name;?></h1>
     <div id="company_section">
         <div id="about_company">
             <h5>About Us</h5>
-            <p><?=$selectedCompany[0]->description;?></p>
+            <p><?=$selectedCompany->description;?></p>
         </div>
         <div id="company_info">
             <div id="info1">
                 <h5>Head Office</h5>
-                <p><?=$selectedCompany[0]->head_office;?></p>
+                <p><?=$selectedCompany->head_office;?></p>
                 <h5>Line of Business</h5>
-                <p><?=$selectedCompany[0]->lob;?></p>
+                <p><?=$selectedCompany->lob;?></p>
             </div>
             <div id="info2">
                 <h5>Website</h5>
-                <p><?=$selectedCompany[0]->website;?></p>
+                <p><?=$selectedCompany->website;?></p>
                 <h5>Employees</h5>
-                <p><?=$selectedCompany[0]->employees;?></p>
+                <p><?=$selectedCompany->employees;?></p>
             </div>
         </div>
     </div>
